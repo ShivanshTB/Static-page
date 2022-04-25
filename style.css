@@ -1,0 +1,120 @@
+*{
+    font-family: sans-serif,serif,'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+h1:only-of-type{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2px 2px ;
+    margin: 2px 2px ;
+}
+div:empty{
+    border: 3px solid black; 
+    border-radius: 20px;
+}
+.about {
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+li:nth-last-child(2n){
+    color: rgb(219, 150, 153);
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:hover{
+    color: aqua;
+}
+a:visited{
+    color: blueviolet;
+}
+/* table */
+table{
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+table, th, td {
+    border: 1px solid;
+    padding: 7px ;
+}
+th{
+    font-size: 1.52em;
+}
+tr:nth-child(2n){
+    background-color: rgb(193, 198, 202);
+}
+tr:hover{
+    background-color: rgb(220, 221, 215);
+}
+td{
+    font-size: 1.13em;
+}
+/* images */
+.images figure{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.imgSrc{
+    margin: 10px 10px ;
+    padding: 10px 10px;
+    text-align: center;
+}
+.images img[src]{
+    width: 80%;
+    box-shadow: 1px 1px 6px black;
+}
+.images img[src]:hover{
+    box-shadow: 3px 3px 6px black;
+}
+
+/* feedback form */
+ #feedback p{
+    text-align: center;
+}
+form{
+    margin: 0 10%;
+    border: 2px solid black;
+    border-radius: 20px;
+  text-align: center;
+}
+form .input{
+    margin: 10px 10px ;
+    padding: 20px 10px;
+}
+input[type=text],[type=email],[type=tel]{
+    width: 20vw;
+    padding: 1%;   
+    background-color: beige;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;    
+   }
+textarea{
+    width: 40vw;
+   padding: 1%;   
+   background-color: beige;
+   border: 2px solid grey;
+   border-radius: 10px;
+   box-sizing: border-box; 
+}
+input[type=text]:focus,[type=email]:focus,[type=tel]:focus,textarea:focus{
+    background-color: aliceblue;
+}
+button{
+    width: 30%;
+    background: #4e4e4e;
+    color: rgb(245, 237, 237);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5vw;
+    border-radius: 20px;
+    
+   }
+   button:hover{
+    box-shadow: 2px 2px 6px rgb(87, 86, 86);
+   }
